@@ -16,8 +16,8 @@ var tbody = document.querySelector('table tbody');
  			produto.unidade    = document.querySelector('#unidade').value;
  			produto.fragancia  = document.querySelector('#fragancia').value;
  			produto.cor        = document.querySelector('#cor').value;
- 			produto.possui_kit = document.querySelector('#poskit').value;
- 			produto.possui_fragancia = document.querySelector('#posfrag').value;
+ 			produto.possuiKit = document.querySelector('#poskit').value;
+ 			produto.possuiFragancia = document.querySelector('#posfrag').value;
  			produto.quantidadeKit    =  document.querySelector('#quantidade').value;
  			produto.preco           = document.querySelector('#preco').value;
 

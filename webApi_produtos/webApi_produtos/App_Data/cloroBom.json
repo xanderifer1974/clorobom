@@ -2,7 +2,7 @@
   {
     "id": 1,
     "nome": "cloro 5 litros",
-    "categoria": "Cloro e Desinfetante",
+    "categoria": "Desinfetante",
     "unidade": "litro",
     "fragancia": "",
     "cor": "",
@@ -26,7 +26,7 @@
   {
     "id": 6,
     "nome": "desinfetante 2 litros",
-    "categoria": "Cloro e Desinfetante",
+    "categoria": "Desinfetante",
     "unidade": "litro",
     "fragancia": "talco",
     "cor": "branco",
