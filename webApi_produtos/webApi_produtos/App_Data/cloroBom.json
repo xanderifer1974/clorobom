@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "nome": "cloro 5 litros",
+    "categoria": "Cloro e Desinfetante",
+    "unidade": "litro",
+    "fragancia": "",
+    "cor": "",
+    "possuiKit": true,
+    "possuiFragancia": false,
+    "quantidadeKit": 2,
+    "preco": 2.0
+  },
+  {
+    "id": 5,
+    "nome": "saco de lixo 40 litros",
+    "categoria": "Saco de Lixo",
+    "unidade": "saco",
+    "fragancia": "",
+    "cor": "",
+    "possuiKit": false,
+    "possuiFragancia": false,
+    "quantidadeKit": 100,
+    "preco": 15.0
+  },
+  {
+    "id": 6,
+    "nome": "desinfetante 2 litros",
+    "categoria": "Cloro e Desinfetante",
+    "unidade": "litro",
+    "fragancia": "talco",
+    "cor": "branco",
+    "possuiKit": false,
+    "possuiFragancia": false,
+    "quantidadeKit": 0,
+    "preco": 2.0
+  },
+  {
+    "id": 7,
+    "nome": "Esponja",
+    "categoria": "Esponja",
+    "unidade": "unidade",
+    "fragancia": "",
+    "cor": "",
+    "possuiKit": false,
+    "possuiFragancia": false,
+    "quantidadeKit": 4,
+    "preco": 2.0
+  }
+]
