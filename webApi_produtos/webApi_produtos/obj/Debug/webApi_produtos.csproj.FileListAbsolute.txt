@@ -199,3 +199,6 @@ D:\Cursos_Udemy\Git para iniciantes\clorobom\webApi_produtos\webApi_produtos\obj
 D:\Cursos_Udemy\Git para iniciantes\clorobom\webApi_produtos\webApi_produtos\obj\Debug\webApi_produtos.csproj.CopyComplete
 D:\Cursos_Udemy\Git para iniciantes\clorobom\webApi_produtos\webApi_produtos\obj\Debug\webApi_produtos.dll
 D:\Cursos_Udemy\Git para iniciantes\clorobom\webApi_produtos\webApi_produtos\obj\Debug\webApi_produtos.pdb
+D:\Cursos_Udemy\Git para iniciantes\clorobom\webApi_produtos\webApi_produtos\bin\Microsoft.Web.Infrastructure.dll
+D:\Cursos_Udemy\Git para iniciantes\clorobom\webApi_produtos\webApi_produtos\bin\Swashbuckle.Core.dll
+D:\Cursos_Udemy\Git para iniciantes\clorobom\webApi_produtos\webApi_produtos\bin\WebActivatorEx.dll
