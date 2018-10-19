@@ -4,10 +4,10 @@
     "nome": "cloro 5 litros",
     "categoria": "Desinfetante",
     "unidade": "litro",
-    "fragancia": "",
-    "cor": "",
+    "fragancia": "palmolive",
+    "cor": "rosa choque",
     "possuiKit": true,
-    "possuiFragancia": false,
+    "possuiFragancia": true,
     "quantidadeKit": 2,
     "preco": 2.0
   },
@@ -45,6 +45,18 @@
     "possuiKit": false,
     "possuiFragancia": false,
     "quantidadeKit": 4,
+    "preco": 2.0
+  },
+  {
+    "id": 8,
+    "nome": "Desinfetante",
+    "categoria": "Desinfetante",
+    "unidade": "litro",
+    "fragancia": "palmolive",
+    "cor": "lilas",
+    "possuiKit": false,
+    "possuiFragancia": false,
+    "quantidadeKit": 2,
     "preco": 2.0
   }
 ]
