@@ -18,10 +18,22 @@ namespace webApi_produtos.Controllers
 
         /*GET: api/Produtos
         Lista o objeto produto, configurado na classe produtos(pasta Models)*/
-        public IEnumerable<ProdutoDao> Get()
+        public  IHttpActionResult Get() //para trabalhar com retorno http
         {
-            ProdutoDao produtos = new ProdutoDao();
-            return produtos.ListarProdutos();
+            try
+            {
+                ProdutoDao produtos = new ProdutoDao();
+                return  Ok(produtos.ListarProdutos());
+
+            }
+            catch(Exception ex)
+            {
+
+                return InternalServerError(ex);
+            }
+
+
+            
         }
 
         // GET: api/Produtos/5

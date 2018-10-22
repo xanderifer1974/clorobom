@@ -131,24 +131,30 @@ var tbody = document.querySelector('table tbody');
 
         /* A pagina será carregada, caso o status esteja OK
         */
-        xhr.onreadystatechange = function()
-        {
-		        	if(this.readyState ==4 && this.status==200)
-		        	{
-		        		
-		              /*Converte para json e armazena na varíavel as informações
-		              obtidas através do webapi_produtos*/
-		              var produtos=JSON.parse(this.responseText);
+        xhr.onreadystatechange = function(){
+        	if(this.readyState ==4){
+        		if (this.status==200){
+
+		        			 /*Converte para json e armazena na varíavel as informações
+		        			 obtidas através do webapi_produtos*/
+		        			 var produtos=JSON.parse(this.responseText);
 					/*Varre todo objeto json vindo do webapi, adicionando linhas
 					através da função adicionar linhas
 					*/
 					for (var indice in produtos) {
 						adicionaLinha(produtos[indice]);
 					}
+
+				}
+				else if (this.status == 500) { //Se status = 500 exibe erro
+					var erro = JSON.parse(this.responseText);
+					console.log(erro);
 				}
 
 			}
-	
+
+		}
+
 			//Executa a chamada a função
 			xhr.send();
 

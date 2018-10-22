@@ -15,7 +15,7 @@ namespace webApi_produtos.Models.DAO
         {
 
             //Obtem o arquivo Json na App_Data
-            var caminhoArquivo = HostingEnvironment.MapPath(@"~/App_Data/cloroBom.json");
+             var caminhoArquivo = HostingEnvironment.MapPath(@"~/App_Data/cloroBom.json");
             //Grava o conteúdo do arquivo na variável json
             var json = File.ReadAllText(caminhoArquivo);
             //Converte o arquivo cloroBom para Json (objeto) e grava na variável lista produto
