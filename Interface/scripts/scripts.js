@@ -120,21 +120,35 @@ var tbody = document.querySelector('table tbody');
          */
          xhr.open('GET',`http://localhost:51722/api/Produtos`,true); 
 
-        /*Ao carregar o ajax, será executado uma função anônima,
-        exibindo a resposta no console.lo
+         /* Exibe no console mensagem de erro*/
+         xhr.oneerror = function(){
+
+         	console.log('ERRO',xhr.readyState);
+         }
+
+
+
+
+        /* A pagina será carregada, caso o status esteja OK
         */
-        xhr.onload = function()
+        xhr.onreadystatechange = function()
         {
-			/*Converte para json e armazena na varíavel as informações
-			obtidas através do webapi_produtos*/
-			var produtos=JSON.parse(this.responseText);
-			/*Varre todo objeto json vindo do webapi, adicionando linhas
-			através da função adicionar linhas
-			*/
-			for (var indice in produtos) {
-				adicionaLinha(produtos[indice]);
+		        	if(this.readyState ==4 && this.status==200)
+		        	{
+		        		
+		              /*Converte para json e armazena na varíavel as informações
+		              obtidas através do webapi_produtos*/
+		              var produtos=JSON.parse(this.responseText);
+					/*Varre todo objeto json vindo do webapi, adicionando linhas
+					através da função adicionar linhas
+					*/
+					for (var indice in produtos) {
+						adicionaLinha(produtos[indice]);
+					}
+				}
+
 			}
-		}
+	
 			//Executa a chamada a função
 			xhr.send();
 
