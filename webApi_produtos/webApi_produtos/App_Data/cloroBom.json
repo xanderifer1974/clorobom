@@ -6,8 +6,8 @@
     "unidade": "litro",
     "fragancia": "talco",
     "cor": "rosa choque",
-    "possuiKit": true,
-    "possuiFragancia": true,
+    "possuiKit": false,
+    "possuiFragancia": false,
     "quantidadeKit": 2,
     "preco": 2.0
   },

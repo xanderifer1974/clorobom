@@ -148,7 +148,8 @@ var tbody = document.querySelector('table tbody');
 				}
 				else if (this.status == 500) { //Se status = 500 exibe erro
 					var erro = JSON.parse(this.responseText);
-					console.log(erro);
+					console.log(erro.Message);
+					console.log(erro.ExceptionMessage);
 				}
 
 			}

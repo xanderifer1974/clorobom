@@ -10,7 +10,9 @@ using webApi_produtos.Models.DAO;
 
 namespace webApi_produtos.Controllers
 {
-    [EnableCors("*","*","*")]//Configuração do acesso ao webapi via javascript - libera os acessos
+    [EnableCors("*", "*", "*")]//Configuração do acesso ao webapi via javascript - libera os acessos
+    
+
     public class ProdutosController : ApiController
     {
 
@@ -18,22 +20,23 @@ namespace webApi_produtos.Controllers
 
         /*GET: api/Produtos
         Lista o objeto produto, configurado na classe produtos(pasta Models)*/
-        public  IHttpActionResult Get() //para trabalhar com retorno http
+       
+        public IHttpActionResult Get() //para trabalhar com retorno http
         {
             try
             {
                 ProdutoDao produtos = new ProdutoDao();
-                return  Ok(produtos.ListarProdutos());
+                return Ok(produtos.ListarProdutos());
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
 
                 return InternalServerError(ex);
             }
 
 
-            
+
         }
 
         // GET: api/Produtos/5
@@ -42,7 +45,7 @@ namespace webApi_produtos.Controllers
         {
             ProdutoDao produtos = new ProdutoDao();
             //Retorna somente o produto com o id informado
-            return produtos.ListarProdutos().Where(x => x.id ==id).FirstOrDefault();
+            return produtos.ListarProdutos().Where(x => x.id == id).FirstOrDefault();
         }
 
         // POST: api/Produtos
